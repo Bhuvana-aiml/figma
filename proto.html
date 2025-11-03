@@ -1,53 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eco-Conscious Marketplace Prototype</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rythmo — Music App Prototype</title>
+  <meta name="description" content="Rythmo — a modern, animated music app prototype built in Figma by Sheikeee." />
   <style>
+    :root {
+      --bg: #0f111a;
+      --card: #1b1e2a;
+      --accent: #1db954;
+      --muted: #a1a7b3;
+      --radius: 14px;
+      font-family: 'Poppins', system-ui, -apple-system, sans-serif;
+    }
+
     body {
-      font-family: "Poppins", sans-serif;
-      background-color: #f3f9f4;
-      color: #2e7d32;
+      margin: 0;
+      background: linear-gradient(180deg, #050a10, #0f111a 90%);
+      color: #fff;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      height: 100vh;
-      margin: 0;
+      min-height: 100vh;
+      text-align: center;
+      padding: 20px;
     }
+
+    .card {
+      background: var(--card);
+      border-radius: var(--radius);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+      padding: 32px;
+      max-width: 480px;
+      width: 100%;
+      animation: fadeIn 1s ease forwards;
+    }
+
+    .logo {
+      width: 90px;
+      height: 90px;
+      border-radius: 20px;
+      background: linear-gradient(135deg, #1db954, #0a84ff);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      font-weight: 700;
+      color: #fff;
+      margin: 0 auto 20px auto;
+    }
+
     h1 {
-      font-size: 1.8rem;
-      margin-bottom: 15px;
+      font-size: 28px;
+      margin: 10px 0;
+      color: #1db954;
+      letter-spacing: 1px;
     }
-    a {
+
+    p {
+      font-size: 15px;
+      color: var(--muted);
+      margin-bottom: 30px;
+    }
+
+    a.button {
+      display: inline-block;
+      background: linear-gradient(90deg, #1db954, #0a84ff);
+      color: #fff;
+      padding: 12px 22px;
+      border-radius: 999px;
       text-decoration: none;
-      background-color: #2e7d32;
-      color: white;
-      padding: 12px 24px;
-      border-radius: 8px;
-      font-size: 1.1rem;
-      transition: 0.3s;
+      font-weight: 600;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
-    a:hover {
-      background-color: #43a047;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    a.button:hover {
+      transform: scale(1.06);
+      box-shadow: 0 0 18px rgba(29, 185, 84, 0.6);
+    }
+
+    footer {
+      margin-top: 25px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
 <body>
-  <h1>🌿 Eco-Conscious Marketplace Prototype</h1>
-   <a href="https://www.figma.com/design/CXnv3CRtuFnxUCTg2M0jyw/Travel-task-3?node-id=0-1&t=xGWJcRQJArthVJg5-1" target="_blank">
-    🔗 View Figma Prototype
-  </a>
-   <a href="https://www.figma.com/design/LPIHEOnTSq7VQ3wn8Wg5O1/Untitled?t=xGWJcRQJArthVJg5-1" target="_blank">
-    🔗 View Figma Prototype
-  </a>
-   <a href="https://www.figma.com/design/1eODIJ0jw3DLY3MgRLJQfi/Rythmo?t=xGWJcRQJArthVJg5-1" target="_blank">
-    🔗 View Figma Prototype
-  </a>
-  <a href="https://www.figma.com/design/cLXzq2JPYBvJVE6klnI5cz/Untitled?t=xGWJcRQJArthVJg5-1" target="_blank">
-    🔗 View Figma Prototype
-  </a>
+  <div class="card">
+    <div class="logo">🎵</div>
+    <h1>Rythmo</h1>
+    <p>
+      Experience the rhythm of design — a premium, Spotify-inspired music app prototype with smooth animations, sleek UI, and connected pages for a seamless user flow.
+    </p>
+    <a class="button" href="https://www.figma.com/design/1eODIJ0jw3DLY3MgRLJQfi/Rythmo?node-id=17-2&t=cvCsjn4YAaiSuIOi-4" target="_blank" rel="noopener">
+      🎧 Open Figma Prototype
+    </a>
+    <footer>
+      Designed with ❤️ by <strong>Sheikeee</strong> in Figma
+    </footer>
+  </div>
 </body>
 </html>
